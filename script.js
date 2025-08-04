@@ -122,18 +122,33 @@ function initializeAnimations() {
 }
 
 function animateOnLoad() {
-    const animatedElements = document.querySelectorAll('.hero-content, .hero-image, .overview-card, .skill-category, .achievement-card, .project-card');
+    // Elements to animate on page load
+    const heroElements = document.querySelectorAll('.hero-content, .hero-image');
     
-    animatedElements.forEach((element, index) => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        
-        setTimeout(() => {
-            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }, index * 100);
+    heroElements.forEach((element, index) => {
+        if (element) {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(40px)';
+            
+            setTimeout(() => {
+                element.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }, index * 300);
+        }
     });
+
+    // Trigger initial animations for other elements
+    setTimeout(() => {
+        const otherElements = document.querySelectorAll('.overview-card, .skill-category, .achievement-card, .project-card');
+        otherElements.forEach((element, index) => {
+            if (element) {
+                setTimeout(() => {
+                    element.classList.add('animate-in');
+                }, index * 150);
+            }
+        });
+    }, 600);
 }
 
 function initializeScrollEffects() {
@@ -162,9 +177,13 @@ function initializeScrollEffects() {
         });
     }, observerOptions);
 
-    // Observe elements for scroll animations
+    // Observe elements for scroll animations (with existence check)
     const observeElements = document.querySelectorAll('.overview-card, .skill-category, .achievement-card, .project-card');
-    observeElements.forEach(el => observer.observe(el));
+    observeElements.forEach(el => {
+        if (el) {
+            observer.observe(el);
+        }
+    });
 }
 
 // Utility functions

@@ -48,7 +48,25 @@
     --max-width: 1200px;
     --border-radius: 8px;
     --border-radius-lg: 12px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Animation Classes */
+.overview-card,
+.skill-category,
+.achievement-card,
+.project-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.overview-card.animate-in,
+.skill-category.animate-in,
+.achievement-card.animate-in,
+.project-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 html {
@@ -434,7 +452,10 @@ body {
 }
 
 .social-icon {
-    font-size: var(--font-size-lg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 /* Footer */
