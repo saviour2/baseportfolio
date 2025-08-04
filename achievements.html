@@ -46,13 +46,17 @@
     <!-- Achievements Content -->
     <section class="achievements-content">
         <div class="container">
-            <!-- Tab Navigation -->
+            <!-- Tab Navigation (now above search/sort) -->
             <div class="tab-navigation">
-                <button class="tab-btn active" data-tab="certifications">Cloud Certifications</button>
-                <button class="tab-btn" data-tab="awards">DevOps Achievements</button>
-                <button class="tab-btn" data-tab="workshops">Technical Workshops</button>
-                <button class="tab-btn" data-tab="seminars">Industry Events</button>
-                <button class="tab-btn" data-tab="events">Learning Path</button>
+                <button class="tab-btn active" data-tab="certifications">Certifications</button>
+                <button class="tab-btn" data-tab="awards">Achievements</button>
+                <button class="tab-btn" data-tab="workshops">Workshops</button>
+                <button class="tab-btn" data-tab="seminars">Seminars</button>
+                <button class="tab-btn" data-tab="events">Events</button>
+            </div>
+            <!-- Search and Sort Controls -->
+            <div class="search-controls-wrapper">
+                <!-- search-controls will be injected by JS -->
             </div>
 
             <!-- Tab Content -->
@@ -60,118 +64,10 @@
                 <!-- Cloud Certifications Tab -->
                 <div id="certifications" class="tab-pane active">
                     <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/aws-icon.svg" alt="AWS" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>AWS Solutions Architect Associate</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Amazon Web Services</p>
-                            <p class="achievement-description">
-                                Demonstrated expertise in designing and deploying scalable, highly available systems on AWS cloud platform.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">AWS</span>
-                                <span class="tag">Cloud Architecture</span>
-                                <span class="tag">Scalability</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/azure-icon.svg" alt="Azure" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Azure DevOps Engineer Expert</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Microsoft Azure</p>
-                            <p class="achievement-description">
-                                Certified in designing and implementing DevOps practices using Microsoft Azure technologies and tools.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Azure</span>
-                                <span class="tag">DevOps</span>
-                                <span class="tag">CI/CD</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/kubernetes-icon.svg" alt="Kubernetes" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Certified Kubernetes Administrator (CKA)</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Cloud Native Computing Foundation</p>
-                            <p class="achievement-description">
-                                Hands-on certification for Kubernetes cluster administration, troubleshooting, and best practices.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Kubernetes</span>
-                                <span class="tag">Container Orchestration</span>
-                                <span class="tag">CNCF</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/gcp-icon.svg" alt="Google Cloud" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Google Cloud Professional DevOps Engineer</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Google Cloud</p>
-                            <p class="achievement-description">
-                                Expertise in implementing DevOps practices and managing application infrastructure on Google Cloud Platform.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">GCP</span>
-                                <span class="tag">Site Reliability</span>
-                                <span class="tag">Automation</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/docker-icon.svg" alt="Docker" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Docker Certified Associate</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Docker Inc.</p>
-                            <p class="achievement-description">
-                                Comprehensive knowledge of Docker containerization, including image creation, networking, and security.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Docker</span>
-                                <span class="tag">Containerization</span>
-                                <span class="tag">Microservices</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/terraform-icon.svg" alt="Terraform" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>HashiCorp Terraform Associate</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">HashiCorp</p>
-                            <p class="achievement-description">
-                                Infrastructure as Code expertise using Terraform for cloud resource provisioning and management.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Terraform</span>
-                                <span class="tag">Infrastructure as Code</span>
-                                <span class="tag">Automation</span>
-                            </div>
+                        <!-- Content will be dynamically loaded by JavaScript -->
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading certifications...</p>
                         </div>
                     </div>
                 </div>
@@ -179,80 +75,10 @@
                 <!-- DevOps Achievements Tab -->
                 <div id="awards" class="tab-pane">
                     <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/jenkins-icon.svg" alt="Jenkins" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Jenkins Pipeline Mastery</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Personal Project Achievement</p>
-                            <p class="achievement-description">
-                                Successfully implemented automated CI/CD pipelines using Jenkins, reducing manual deployment time and improving code quality.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Jenkins</span>
-                                <span class="tag">CI/CD</span>
-                                <span class="tag">Automation</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/aws-icon.svg" alt="AWS" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>AWS Free Tier Projects</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Self-Learning Initiative</p>
-                            <p class="achievement-description">
-                                Completed multiple hands-on projects using AWS free tier services, gaining practical experience with cloud infrastructure.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">AWS</span>
-                                <span class="tag">Hands-on Learning</span>
-                                <span class="tag">Cloud Practice</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/cloud-icon.svg" alt="DevOps" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>DevOps Learning Path Completion</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Online Learning Platform</p>
-                            <p class="achievement-description">
-                                Completed comprehensive DevOps learning path covering Docker, Kubernetes, and infrastructure automation tools.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">DevOps</span>
-                                <span class="tag">Continuous Learning</span>
-                                <span class="tag">Skill Development</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/terraform-icon.svg" alt="Terraform" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Infrastructure as Code Practice</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Personal Development Project</p>
-                            <p class="achievement-description">
-                                Implemented infrastructure as code practices using Terraform for personal projects, establishing reusable infrastructure templates.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Infrastructure as Code</span>
-                                <span class="tag">Terraform</span>
-                                <span class="tag">Best Practices</span>
-                            </div>
+                        <!-- Content will be dynamically loaded by JavaScript -->
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading achievements...</p>
                         </div>
                     </div>
                 </div>
@@ -260,61 +86,10 @@
                 <!-- Workshops Tab -->
                 <div id="workshops" class="tab-pane">
                     <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/docker-icon.svg" alt="Docker" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Docker Fundamentals Workshop</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Local Tech Meetup</p>
-                            <p class="achievement-description">
-                                Participated in hands-on Docker workshop covering containerization basics and best practices.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Docker</span>
-                                <span class="tag">Containerization</span>
-                                <span class="tag">Hands-on Learning</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/kubernetes-icon.svg" alt="Kubernetes" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Docker & Kubernetes Bootcamp</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Container Academy</p>
-                            <p class="achievement-description">
-                                Hands-on workshop covering containerization and orchestration best practices.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Docker</span>
-                                <span class="tag">Kubernetes</span>
-                                <span class="tag">DevOps</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/cloud-icon.svg" alt="Cloud Computing" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Cloud Computing Basics</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Online Course Platform</p>
-                            <p class="achievement-description">
-                                Completed foundational course on cloud computing concepts, services, and deployment models.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Cloud Computing</span>
-                                <span class="tag">AWS</span>
-                                <span class="tag">Fundamentals</span>
-                            </div>
+                        <!-- Content will be dynamically loaded by JavaScript -->
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading workshops...</p>
                         </div>
                     </div>
                 </div>
@@ -322,61 +97,10 @@
                 <!-- Seminars Tab -->
                 <div id="seminars" class="tab-pane">
                     <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/cloud-icon.svg" alt="DevOps" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>DevOps Virtual Meetup Series</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">DevOps Community</p>
-                            <p class="achievement-description">
-                                Regular participant in virtual DevOps meetups discussing industry trends and tools.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">DevOps</span>
-                                <span class="tag">Community</span>
-                                <span class="tag">Networking</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/security-icon.svg" alt="Security" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Cybersecurity in Modern Apps</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Security Conference</p>
-                            <p class="achievement-description">
-                                Seminar on implementing security best practices in web applications.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Security</span>
-                                <span class="tag">Best Practices</span>
-                                <span class="tag">Web Apps</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/architecture-icon.svg" alt="Architecture" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Scalable Architecture Design</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Architecture Symposium</p>
-                            <p class="achievement-description">
-                                Attended seminar on designing scalable and maintainable software architecture.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Architecture</span>
-                                <span class="tag">Scalability</span>
-                                <span class="tag">Design Patterns</span>
-                            </div>
+                        <!-- Content will be dynamically loaded by JavaScript -->
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading seminars...</p>
                         </div>
                     </div>
                 </div>
@@ -384,61 +108,10 @@
                 <!-- Events Tab -->
                 <div id="events" class="tab-pane">
                     <div class="achievements-grid">
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/community-icon.svg" alt="Community" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Local Tech Meetup Participation</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Local Developer Community</p>
-                            <p class="achievement-description">
-                                Active participant in local technology meetups and developer community events.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Community</span>
-                                <span class="tag">Networking</span>
-                                <span class="tag">Learning</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/github-icon.svg" alt="GitHub" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>GitHub Learning Lab Completion</h3>
-                                    <span class="achievement-date">2024</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">GitHub</p>
-                            <p class="achievement-description">
-                                Completed GitHub Learning Lab courses on Git workflows and collaborative development practices.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Git</span>
-                                <span class="tag">GitHub</span>
-                                <span class="tag">Version Control</span>
-                            </div>
-                        </div>
-
-                        <div class="achievement-card">
-                            <div class="achievement-header">
-                                <img src="icons/light/github-icon.svg" alt="Open Source" class="achievement-icon">
-                                <div class="achievement-title-section">
-                                    <h3>Open Source Contribution</h3>
-                                    <span class="achievement-date">2023</span>
-                                </div>
-                            </div>
-                            <p class="achievement-issuer">Personal Initiative</p>
-                            <p class="achievement-description">
-                                Made first contributions to open source projects, including documentation improvements and bug fixes.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Open Source</span>
-                                <span class="tag">GitHub</span>
-                                <span class="tag">Community</span>
-                            </div>
+                        <!-- Content will be dynamically loaded by JavaScript -->
+                        <div class="loading-state">
+                            <div class="loading-spinner"></div>
+                            <p>Loading events...</p>
                         </div>
                     </div>
                 </div>
@@ -483,5 +156,6 @@
     </button>
 
     <script src="script.js"></script>
+    <script src="js/certificates.js"></script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "title": "HTML 5 : The Language",
+      "issuer": "Infosys Springboard",
+      "date": "June 2025",
+      "icon": "code-icon.svg",
+      "category": "web",
+      "tags": ["HTML 5", "Web Dev", "Frontend"],
+      "credentialId": "HTML5-2025-001",
+      "verificationUrl": "https://verify.onwingspan.com",
+      "image": "certificates/HTML5.jpg"
+    },
+    {
+      "id": 2,
+      "title": "CSS3 Advanced Styling",
+      "issuer": "Infosys Springboard",
+      "date": "June 2025",
+      "icon": "code-icon.svg",
+      "category": "web",
+      "tags": ["CSS3", "Web Dev", "Frontend"],
+      "credentialId": "CSS3-2025-002",
+      "verificationUrl": "https://verify.onwingspan.com",
+      "image": "certificates/CSS3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Fundamentals",
+      "issuer": "Infosys Springboard",
+      "date": "June 2025",
+      "icon": "code-icon.svg",
+      "category": "web",
+      "tags": ["JavaScript", "Web Dev", "Frontend"],
+      "credentialId": "JS-2025-003",
+      "verificationUrl": "https://verify.onwingspan.com",
+      "image": "certificates/Javascript.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Email Writing",
+      "issuer": "Infosys Springboard",
+      "date": "June 2025",
+      "icon": "code-icon.svg",
+      "category": "professional",
+      "tags": ["Non Tech.", "Communication", "Misc."],
+      "credentialId": "EMAIL-2025-004",
+      "verificationUrl": "https://verify.onwingspan.com",
+      "image": "certificates/Email writing.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Time Management",
+      "issuer": "Infosys Springboard",
+      "date": "May 2025",
+      "icon": "code-icon.svg",
+      "category": "professional",
+      "tags": ["Non Tech.", "Productivity", "Misc."],
+      "credentialId": "TIME-2025-005",
+      "verificationUrl": "https://verify.onwingspan.com",
+      "image": "certificates/Time Management.jpg"
+    }
+  ],
+  "achievements": [
+    {
+      "id": 1,
+      "title": "Personal Portfolio Development",
+      "issuer": "Self-Directed Project",
+      "date": "2024",
+      "icon": "code-icon.svg",
+      "category": "devops",
+      "tags": ["Portfolio", "Web Development", "JavaScript", "Project Management"]
+    }
+  ],
+  "workshops": [
+    {
+      "id": 1,
+      "title": "Modern Web Development Workshop",
+      "issuer": "Local Tech Community",
+      "date": "2024",
+      "icon": "code-icon.svg",
+      "category": "workshop",
+      "tags": ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+    }
+  ],
+  "seminars": [
+    {
+      "id": 1,
+      "title": "Web Standards and Best Practices",
+      "issuer": "Developer Conference",
+      "date": "2024",
+      "icon": "code-icon.svg",
+      "category": "seminar",
+      "tags": ["Web Standards", "Accessibility", "Performance", "Best Practices"]
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Frontend Developer Meetup",
+      "issuer": "Local Developer Community",
+      "date": "2024",
+      "icon": "community-icon.svg",
+      "category": "event",
+      "tags": ["Community", "Frontend", "Networking", "Knowledge Sharing"]
+    }
+  ]
+}
