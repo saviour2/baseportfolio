@@ -21,15 +21,17 @@ A modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScr
 ## 🚀 Getting Started
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/portfolio.git
    ```
 
 2. Open `index.html` in your browser or serve with a local server:
+
    ```bash
    # Using Python
    python -m http.server 8000
-   
+
    # Using Node.js
    npx serve .
    ```
@@ -51,6 +53,7 @@ A modern, responsive portfolio website built with vanilla HTML, CSS, and JavaScr
 ## 📱 Responsive Design
 
 The website is fully responsive with breakpoints for:
+
 - Mobile: < 480px
 - Tablet: 768px
 - Desktop: > 1200px
