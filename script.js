@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTabs();
     initializeAnimations();
     initializeScrollEffects();
+    initializeGoToTop();
 });
 
 // Navigation functionality
@@ -392,6 +393,37 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeParallax();
     initializeThemeToggle();
 });
+
+// Go to Top Button functionality
+function initializeGoToTop() {
+    const goToTopButton = document.getElementById('goToTop');
+    
+    if (!goToTopButton) return;
+
+    // Show/hide button based on scroll position
+    function toggleGoToTopButton() {
+        if (window.pageYOffset > 300) {
+            goToTopButton.classList.add('visible');
+        } else {
+            goToTopButton.classList.remove('visible');
+        }
+    }
+
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Event listeners
+    window.addEventListener('scroll', toggleGoToTopButton);
+    goToTopButton.addEventListener('click', scrollToTop);
+
+    // Initial check
+    toggleGoToTopButton();
+}
 
 // Console message for developers
 console.log('🚀 Portfolio website loaded successfully!');

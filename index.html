@@ -12,7 +12,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">&lt;Portfolio/&gt;</span>
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">&lt;Portfolio/&gt;</span>
+                </a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -65,19 +67,25 @@
             <h2 class="section-title">What I Do</h2>
             <div class="overview-grid">
                 <div class="overview-card">
-                    <div class="card-icon">🏆</div>
+                    <div class="card-icon">
+                        <img src="icons/light/aws-icon.svg" alt="Certifications" class="card-icon-svg">
+                    </div>
                     <h3>Certifications</h3>
                     <p>Cloud and DevOps certifications, achievements, and professional recognition in various technologies.</p>
                     <a href="achievements.html" class="card-link">Explore Certifications →</a>
                 </div>
                 <div class="overview-card">
-                    <div class="card-icon">�</div>
+                    <div class="card-icon">
+                        <img src="icons/light/settings.png" alt="DevOps Projects" class="card-icon-svg">
+                    </div>
                     <h3>DevOps Projects</h3>
                     <p>Infrastructure automation, CI/CD pipelines, and cloud architecture implementations.</p>
                     <a href="projects.html" class="card-link">View Projects →</a>
                 </div>
                 <div class="overview-card">
-                    <div class="card-icon">☁️</div>
+                    <div class="card-icon">
+                        <img src="icons/light/cloud-icon.svg" alt="Cloud Infrastructure" class="card-icon-svg">
+                    </div>
                     <h3>Cloud & Infrastructure</h3>
                     <p>Expertise in cloud platforms, containerization, orchestration, and infrastructure as code.</p>
                     <a href="#skills" class="card-link">See Skills →</a>
@@ -92,7 +100,10 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Cloud Platforms</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/cloud-icon.svg" alt="Cloud" class="skill-category-icon">
+                        <h3>Cloud Platforms</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Azure</span>
@@ -102,7 +113,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Containerization & Orchestration</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/docker-icon.svg" alt="Containers" class="skill-category-icon">
+                        <h3>Containerization & Orchestration</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
@@ -112,7 +126,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>CI/CD & Automation</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/settings.png" alt="CI/CD" class="skill-category-icon">
+                        <h3>CI/CD & Automation</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Jenkins</span>
                         <span class="skill-tag">GitHub Actions</span>
@@ -122,7 +139,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Monitoring & Logging</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/monitoring-icon.svg" alt="Monitoring" class="skill-category-icon">
+                        <h3>Monitoring & Logging</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Prometheus</span>
                         <span class="skill-tag">Grafana</span>
@@ -132,7 +152,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Programming & Scripting</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/python-icon.svg" alt="Programming" class="skill-category-icon">
+                        <h3>Programming & Scripting</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Bash</span>
@@ -142,7 +165,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Version Control & Collaboration</h3>
+                    <div class="skill-category-header">
+                        <img src="icons/light/github-icon.svg" alt="Version Control" class="skill-category-icon">
+                        <h3>Version Control & Collaboration</h3>
+                    </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">GitHub</span>
@@ -165,11 +191,11 @@
                 </p>
                 <div class="social-links">
                     <a href="https://github.com/saviour2" target="_blank" class="social-link">
-                        <img src="icons/github-icon.svg" alt="GitHub" class="social-icon">
+                        <img src="icons/light/github-icon.svg" alt="GitHub" class="social-icon">
                         <span>GitHub</span>
                     </a>
                     <a href="https://www.linkedin.com/in/saikat-das-cloud/" target="_blank" class="social-link">
-                        <img src="icons/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+                        <img src="icons/light/linkedin-icon.svg" alt="LinkedIn" class="social-icon">
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -183,6 +209,13 @@
             <p>&copy; 2025 Saikat Das. Automating the future, one pipeline at a time.</p>
         </div>
     </footer>
+
+    <!-- Go to Top Button -->
+    <button id="goToTop" class="go-to-top" aria-label="Go to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 6L6 12H10V18H14V12H18L12 6Z" fill="currentColor"/>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
