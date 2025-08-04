@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;Portfolio/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="achievements.html" class="nav-link active">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Achievements</h1>
+            <p class="page-subtitle">Milestones, certifications, and professional recognition</p>
+        </div>
+    </section>
+
+    <!-- Achievements Content -->
+    <section class="achievements-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="certifications">Certifications</button>
+                <button class="tab-btn" data-tab="awards">Awards</button>
+                <button class="tab-btn" data-tab="workshops">Workshops</button>
+                <button class="tab-btn" data-tab="seminars">Seminars</button>
+                <button class="tab-btn" data-tab="events">Events</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Certifications Tab -->
+                <div id="certifications" class="tab-pane active">
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>AWS Certified Solutions Architect</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Amazon Web Services</p>
+                            <p class="achievement-description">
+                                Demonstrated expertise in designing and deploying scalable systems on AWS cloud platform.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Cloud Computing</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Google Cloud Professional Developer</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Google Cloud</p>
+                            <p class="achievement-description">
+                                Certified in designing, building, and deploying applications on Google Cloud Platform.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">GCP</span>
+                                <span class="tag">Cloud Development</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Meta Frontend Developer Certificate</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">Meta (Facebook)</p>
+                            <p class="achievement-description">
+                                Comprehensive program covering React, JavaScript, and modern frontend development practices.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Awards Tab -->
+                <div id="awards" class="tab-pane">
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Best Innovation Award</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Tech Conference 2024</p>
+                            <p class="achievement-description">
+                                Recognized for developing an innovative solution that improved user engagement by 40%.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Innovation</span>
+                                <span class="tag">UX Design</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Hackathon Winner</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">CodeCraft Hackathon</p>
+                            <p class="achievement-description">
+                                First place winner for developing a real-time collaboration tool in 48 hours.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Hackathon</span>
+                                <span class="tag">Team Leadership</span>
+                                <span class="tag">Real-time Apps</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Employee of the Month</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">Tech Solutions Inc.</p>
+                            <p class="achievement-description">
+                                Recognized for exceptional performance and mentoring junior developers.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Mentoring</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshops Tab -->
+                <div id="workshops" class="tab-pane">
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Advanced React Patterns Workshop</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">React Conference</p>
+                            <p class="achievement-description">
+                                Intensive workshop on advanced React patterns, hooks, and performance optimization.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Advanced Patterns</span>
+                                <span class="tag">Performance</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Docker & Kubernetes Bootcamp</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Container Academy</p>
+                            <p class="achievement-description">
+                                Hands-on workshop covering containerization and orchestration best practices.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">DevOps</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Machine Learning Fundamentals</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">AI Institute</p>
+                            <p class="achievement-description">
+                                Comprehensive workshop on ML algorithms, data preprocessing, and model deployment.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seminars Tab -->
+                <div id="seminars" class="tab-pane">
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Future of Web Development</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">WebDev Summit</p>
+                            <p class="achievement-description">
+                                Attended seminar on emerging web technologies and industry trends.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">Industry Trends</span>
+                                <span class="tag">Future Tech</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Cybersecurity in Modern Apps</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Security Conference</p>
+                            <p class="achievement-description">
+                                Seminar on implementing security best practices in web applications.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Security</span>
+                                <span class="tag">Best Practices</span>
+                                <span class="tag">Web Apps</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Scalable Architecture Design</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">Architecture Symposium</p>
+                            <p class="achievement-description">
+                                Attended seminar on designing scalable and maintainable software architecture.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Architecture</span>
+                                <span class="tag">Scalability</span>
+                                <span class="tag">Design Patterns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Tab -->
+                <div id="events" class="tab-pane">
+                    <div class="achievements-grid">
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Google I/O 2024</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">Google</p>
+                            <p class="achievement-description">
+                                Attended Google's annual developer conference featuring the latest in AI and cloud technologies.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Cloud</span>
+                                <span class="tag">Developer Conference</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>JSConf 2024</h3>
+                                <span class="achievement-date">2024</span>
+                            </div>
+                            <p class="achievement-issuer">JavaScript Community</p>
+                            <p class="achievement-description">
+                                Participated in the premier JavaScript conference with industry leaders and innovators.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Community</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-header">
+                                <h3>Open Source Summit</h3>
+                                <span class="achievement-date">2023</span>
+                            </div>
+                            <p class="achievement-issuer">Linux Foundation</p>
+                            <p class="achievement-description">
+                                Contributed to discussions on open source sustainability and community building.
+                            </p>
+                            <div class="achievement-tags">
+                                <span class="tag">Open Source</span>
+                                <span class="tag">Community</span>
+                                <span class="tag">Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Ready to collaborate on your next project? Let's build something amazing together.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                        <span class="social-icon">📱</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+                        <span class="social-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:your.email@gmail.com" class="social-link">
+                        <span class="social-icon">✉️</span>
+                        <span>Gmail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. Crafted with ❤️ and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

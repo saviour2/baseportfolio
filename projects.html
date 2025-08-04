@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;Portfolio/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="achievements.html" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Projects</h1>
+            <p class="page-subtitle">From concept to completion - explore my development journey</p>
+        </div>
+    </section>
+
+    <!-- Projects Content -->
+    <section class="projects-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="completed">Completed</button>
+                <button class="tab-btn" data-tab="construction">Under Construction</button>
+                <button class="tab-btn" data-tab="planned">Planned</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Completed Projects Tab -->
+                <div id="completed" class="tab-pane active">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🌐</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>E-Commerce Platform</h3>
+                                    <div class="project-status completed">Completed</div>
+                                </div>
+                                <p class="project-description">
+                                    Full-stack e-commerce solution with payment integration, inventory management, 
+                                    and admin dashboard. Built with modern web technologies.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Stripe API</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Live Demo</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">📱</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Task Management App</h3>
+                                    <div class="project-status completed">Completed</div>
+                                </div>
+                                <p class="project-description">
+                                    Responsive task management application with real-time collaboration, 
+                                    drag-and-drop functionality, and team workspace features.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Live Demo</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">📊</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Analytics Dashboard</h3>
+                                    <div class="project-status completed">Completed</div>
+                                </div>
+                                <p class="project-description">
+                                    Real-time analytics dashboard with interactive charts, data visualization, 
+                                    and customizable reporting features for business intelligence.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">D3.js</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Live Demo</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🎵</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Music Streaming App</h3>
+                                    <div class="project-status completed">Completed</div>
+                                </div>
+                                <p class="project-description">
+                                    Spotify-like music streaming application with playlist management, 
+                                    user authentication, and responsive audio player interface.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Web Audio API</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">CSS Grid</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Live Demo</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Under Construction Tab -->
+                <div id="construction" class="tab-pane">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🤖</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>AI Chat Assistant</h3>
+                                    <div class="project-status construction">In Progress</div>
+                                </div>
+                                <p class="project-description">
+                                    Building an intelligent chat assistant with natural language processing, 
+                                    context awareness, and integration with multiple AI providers.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">WebSockets</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <span class="progress-text">75% Complete</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Preview</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🏠</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Smart Home Dashboard</h3>
+                                    <div class="project-status construction">In Progress</div>
+                                </div>
+                                <p class="project-description">
+                                    IoT dashboard for controlling smart home devices with real-time monitoring, 
+                                    automation rules, and energy consumption tracking.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">MQTT</span>
+                                    <span class="tech-tag">InfluxDB</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 50%"></div>
+                                    </div>
+                                    <span class="progress-text">50% Complete</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Preview</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">📚</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Learning Management System</h3>
+                                    <div class="project-status construction">In Progress</div>
+                                </div>
+                                <p class="project-description">
+                                    Comprehensive LMS with course creation, progress tracking, interactive quizzes, 
+                                    and video streaming capabilities for online education.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Prisma</span>
+                                    <span class="tech-tag">AWS S3</span>
+                                    <span class="tech-tag">Stripe</span>
+                                </div>
+                                <div class="project-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 30%"></div>
+                                    </div>
+                                    <span class="progress-text">30% Complete</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>Preview</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>GitHub</span>
+                                        <span class="link-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Planned Projects Tab -->
+                <div id="planned" class="tab-pane">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🌱</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Sustainability Tracker</h3>
+                                    <div class="project-status planned">Planned</div>
+                                </div>
+                                <p class="project-description">
+                                    Mobile-first application for tracking personal carbon footprint, 
+                                    suggesting eco-friendly alternatives, and gamifying sustainable living.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">GraphQL</span>
+                                    <span class="tech-tag">Machine Learning</span>
+                                    <span class="tech-tag">Maps API</span>
+                                </div>
+                                <div class="project-timeline">
+                                    <span class="timeline-label">Expected Start:</span>
+                                    <span class="timeline-date">Q2 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🎮</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Multiplayer Game Platform</h3>
+                                    <div class="project-status planned">Planned</div>
+                                </div>
+                                <p class="project-description">
+                                    Real-time multiplayer gaming platform with custom game engine, 
+                                    matchmaking system, and social features for indie game developers.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">WebGL</span>
+                                    <span class="tech-tag">WebRTC</span>
+                                    <span class="tech-tag">Kubernetes</span>
+                                    <span class="tech-tag">Microservices</span>
+                                </div>
+                                <div class="project-timeline">
+                                    <span class="timeline-label">Expected Start:</span>
+                                    <span class="timeline-date">Q3 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🔐</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Blockchain Voting System</h3>
+                                    <div class="project-status planned">Planned</div>
+                                </div>
+                                <p class="project-description">
+                                    Secure, transparent voting system using blockchain technology 
+                                    with voter authentication, immutable records, and real-time results.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Solidity</span>
+                                    <span class="tech-tag">Web3.js</span>
+                                    <span class="tech-tag">IPFS</span>
+                                    <span class="tech-tag">Smart Contracts</span>
+                                </div>
+                                <div class="project-timeline">
+                                    <span class="timeline-label">Expected Start:</span>
+                                    <span class="timeline-date">Q4 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-placeholder">
+                                    <span class="project-icon">🧠</span>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Mental Health Companion</h3>
+                                    <div class="project-status planned">Planned</div>
+                                </div>
+                                <p class="project-description">
+                                    AI-powered mental health support application with mood tracking, 
+                                    personalized recommendations, and anonymous peer support communities.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Natural Language Processing</span>
+                                    <span class="tech-tag">Privacy-First Design</span>
+                                </div>
+                                <div class="project-timeline">
+                                    <span class="timeline-label">Expected Start:</span>
+                                    <span class="timeline-date">Q1 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Ready to collaborate on your next project? Let's build something amazing together.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                        <span class="social-icon">📱</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+                        <span class="social-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:your.email@gmail.com" class="social-link">
+                        <span class="social-icon">✉️</span>
+                        <span>Gmail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. Crafted with ❤️ and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
